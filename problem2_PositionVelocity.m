@@ -41,3 +41,4 @@ r=C_rot*rp; %km, position vector in geocentric frame (after rotating from perifo
 v=C_rot*vp; %km/sec, velocity vector in geocentric frame (after rotating from perifocal frame)
 r=r'
 v=v'
+end
