@@ -26,7 +26,7 @@
 %v=[-307970.911257186 1894120.02681853 22144.8242010879]
 %muo=132712440041.94
 %r=[227939282.200749 -11219880.0592502 2764663.06791779];v=[-3.56447813955076 21.9226854955848 0.25630583566074];muo=132712440041.94;
-function [a,e,i,w,Omega,Theta,Period,rp,ra,E,M]=problem3_p_rp_ra_E_M_OrbitalE(r,v,muo)
+function [a,e,i,w,Omega,Theta,Period,rp,ra,E,M]=function_p_rp_ra_E_M_OrbitalE(r,v,muo)
 I_hat = [1 0 0];
 K_hat = [0 0 1];
 Energy = (((dot(v,v))/2)-(muo/norm(r)));
