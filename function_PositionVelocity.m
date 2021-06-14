@@ -28,7 +28,7 @@
 %Theta=3.8847 Radians
 %muo=132712440041.94
 %a=198200882.566171;e=0.2559;i=0.0188;w=3.0985;Omega=5.534;Theta=3.884;muo=132712440041.94;
-function [r,v]=problem2_PositionVelocity(a,e,i,w,Omega,Theta,muo)
+function [r,v]=function_PositionVelocity(a,e,i,w,Omega,Theta,muo)
 p = a*(1-(e^2)); %the semi-parameter
 rp = p/(1+e*cos(Theta))*[cos(Theta);sin(Theta);0]; %km, position vector in perifocal frame
 vp = sqrt(muo/p)*[-sin(Theta);e+cos(Theta);0]; %km/sec velcoity vector in perifocal frame
